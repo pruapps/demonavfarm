@@ -1,0 +1,112 @@
+<html>
+<head>
+
+    <style>
+        .container {
+            padding: 5% 15%;
+        }
+
+        .imagelogo {
+            width: 100px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .container-inner {
+            padding: 5%;
+        }
+
+        .square {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            border-radius: 10%;
+            border-color: #323c8d;
+        }
+
+        h4 {
+            font-size: 12px;
+        }
+
+        .rectangle {
+            width: 93%;
+            border-style: solid;
+            border-color: #9a9a9a;
+            height: 28%;
+            margin-left: 2%;
+        }
+
+        @media(min-width: 1330px) {
+            .container {
+                padding: 5% 37%;
+            }
+
+            .square {
+                height: 125%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-inner square">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="{Logo_Path}" class="imagelogo">
+                        </div>
+                        <div class="col-sm-6" style="text-align: right;margin-top: 30px;">
+                            <span>{DATE}</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr style="margin-top: 5%;">
+            <div style="width:100%; background-color: #f7f9fa">
+                <div class="row">
+                    <h3 style="margin-left: 5%;">User Created Notification </h3>
+                </div>
+                <div class="row">
+                    <h3 style="font-size: 18px; margin-left: 5%;">Dear {First_Name}</h3>
+                </div>
+                <div class="row">
+                    <h3 style="font-size: 18px; margin-left: 5%;"></h3>
+                </div>
+
+                <div class="rectangle">
+                    <div class="row" style="margin-top: 10px; margin-left: 10px;">
+
+                    </div>
+
+                    <hr style="width: 95%; margin-top: 20px;">
+                    <div class="row" style="margin-left: 20px;">
+                        <span>
+                            <p style="margin-left: -2%;">
+                                This is an automatic notification from the Online Time Sheet system, informing you that
+                                {First_Name} your login has been created with User Name:- <strong><mark>{Emp_code}</mark></strong> and Password:- <strong><mark>{Password}</mark></strong>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-left: 5% ;margin-top: 2%;">
+                    <span>
+                        Login to the <a href='http://ots.prudencesoftech.in' title='Online Time Sheet system' target=_blank> OTS system</a> to view the details.
+                    </span>
+                    <br>
+                    <span>Thank You,</span>
+                    <br>
+                    <span>Human Resources</span>
+                    <br>
+                    <span>Prudence Technology Pvt. Ltd.</span>
+                    <br><br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

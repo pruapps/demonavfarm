@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/centralindia/connectors/ConnectionStringsnavfarmdevserver_D7B6EA3A44",
+      "secretStore": null,
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/navfarmdev-server/databases/Navfarm Demo Dev_29Jan2024",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:navfarmdev-server",
+      "dynamicId": null
+    }
+  }
+}

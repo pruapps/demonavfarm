@@ -1,0 +1,99 @@
+<html>
+<head>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        .container {
+            padding: 60px 280px;
+        }
+
+        .imagelogo {
+            width: 100px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .container-inner {
+            padding: 18px 30px 50px 30px;
+        }
+
+        .square {
+            height: 110%;
+            width: 100%;
+            border-style: solid;
+            border-radius: 40px;
+            border-color: #323c8d;
+        }
+
+        h4 {
+            font-size: 12px;
+        }
+
+        .rectangle {
+            width: 93%;
+            border-style: solid;
+            border-color: #9a9a9a;
+            height: 28%;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body> 
+<div class="container">
+	<div class="container-inner square">
+	    <div class="row" >
+			<div class="col-sm-12">
+				<div class="row">			
+				    <div class="col-sm-6">
+				       <img src="{Logo_Path}" class="imagelogo" >
+			        </div>
+				    <div class="col-sm-6" style="text-align: right;margin-top: 30px;">
+                        <span>{DATE}</span>
+			        </div>
+				</div>
+			</div>			
+	    </div>
+	<hr style="margin-top: 40px;">
+	<div style="width:100%; background-color: #f7f9fa">
+	<div class="row">
+        <h3 style="margin-left: 35px;">Expense Submission Notification {USER_NAME}</h3>
+	</div>
+	<div class="row">
+        <h3 style="font-size: 18px; margin-left: 35px;">Hello {MANAGER_NAME}</h3>
+	</div>
+	<div class="row">
+		<h3 style="font-size: 18px; margin-left: 35px;"></h3>
+	</div>
+
+	<div class="rectangle">
+		<div class="row" style="margin-top: 10px; margin-left: 10px;">			
+		</div>
+		<hr style="width: 95%; margin-top: 20px;">
+		<div class="row" style="margin-left: 20px;">
+			<span>
+                <p style="margin-left: -11px;">
+                    This is an automatic notification from the Online Time Sheet system, informing you that
+                    {USER_NAME} has submitted their Expense for the month of {MONTH_NAME} {YEAR} for your Approval.
+                </p>
+			</span>			
+		</div></div>
+
+    <div class="row" style="margin-left: 20px; margin-top: 10px;">
+			<span>
+				Login to the <a href = 'http://ots.prudencesoftech.in' title = 'Online Time Sheet system' target = _blank> OTS system</a> to view the details.
+            </span>
+			<br>
+			<span>Thank You,</span>
+			<br>
+			<span>Human Resources</span>
+			<br>
+			<span>Prudence Technology Pvt. Ltd.</span>
+			<br><br>
+		</div>
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

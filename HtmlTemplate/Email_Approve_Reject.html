@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        .container {
+            padding: 5% 15%;
+        }
+        .imagelogo {
+            width: 100px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .container-inner {
+            padding: 5%;
+        }
+        .square {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            border-radius: 10%;
+            border-color: #323c8d;
+        }
+        h4 {
+            font-size: 12px;
+        }
+        .rectangle {
+            width: 93%;
+            border-style: solid;
+            border-color: #9a9a9a;
+            height: 28%;
+            margin-left: 2%;
+        }
+        @media(min-width: 1330px) {
+            .container {
+                padding: 5% 37%;
+            }
+
+            .square {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-inner square">
+            <div class="row">
+                <img src="{Logo_Path}" class="imagelogo">
+                <span style="float: right;margin-top: 2%;">{DATE}</span>
+            </div>
+            <hr style="margin-top: 0%;">
+            <div style="width:100%; background-color: #f7f9fa">
+                <!--<div class="row">
+                    <h3 style="margin-left: 35px;">{TYPE} {ACTION} Notification</h3>
+                </div>-->
+                <div class="row">
+                    <h3 style="font-size: 100%; margin-left: 3%;">Hello {USER_NAME}</h3>
+                </div>
+                <div class="row">
+                    <h3 style="font-size: 105%;    margin-left: 10%;"></h3>
+                </div>
+
+                <div class="rectangle">
+                    <div class="row">
+                    </div>
+                    <hr style="width: 95%; margin-top: 2%;">
+                    <div class="row" style="margin-left: 3%;">
+                        <p>
+                            <span>
+                                This is an automatic notification from the Online Time Sheet system, informing you that your
+                                {ROLE_NAME} has {ACTION} your {TYPE} for the month of {MONTH_NAME} {YEAR}.
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                <strong>Remark : </strong><strong><mark>{REMARK}</mark></strong>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-left: 3%; margin-top: 3%;">
+                    <span>
+                        Login to the <a href='https://ots.prudencesoftech.in' title='Online Time Sheet system' target=_blank> OTS system</a> to view the details.
+                    </span>
+                    <br>
+                    <span>Thank You,</span>
+                    <br>
+                    <span>Human Resources</span>
+                    <br>
+                    <span>Prudence Technology Pvt. Ltd.</span>
+                    <br><br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
